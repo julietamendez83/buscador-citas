@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Citas</title>
+<style>
+    body { 
+      font-family: system-ui, -apple-system, sans-serif; 
+      max-width: 650px; 
+      margin: 40px auto; 
+      padding: 0 20px; 
+      background: #f4f6f8; 
+      color: #1a1a1a;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #003b5c; /* Azul UNAHUR */
+      font-weight: 700;
+    }
+    input { 
+      width: 100%; 
+      padding: 14px 18px; 
+      font-size: 16px; 
+      border: 2px solid #e0e0e0; 
+      border-radius: 8px; 
+      box-sizing: border-box; 
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    input:focus {
+      border-color: #80b82d; /* Verde UNAHUR al enfocar */
+      box-shadow: 0 0 0 3px rgba(128, 184, 45, 0.2);
+    }
+    .card { 
+      background: white; 
+      border-left: 5px solid #80b82d; /* Detalle Verde UNAHUR */
+      padding: 18px 22px; 
+      margin-top: 16px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
+    }
+    .quote { 
+      font-size: 17px; 
+      font-style: italic; 
+      margin-bottom: 10px; 
+      line-height: 1.5;
+      color: #003b5c; /* Texto principal en azul profundo */
+    }
+    .author { 
+      font-weight: 600; 
+      color: #555; 
+      font-size: 14px;
+    }
+    .tags { 
+      font-size: 12px; 
+      color: #777; 
+      margin-top: 10px; 
+      background: #eef5e6;
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Buscador de Citas Textuales</h2>
+  <input type="text" id="searchInput" placeholder="Buscar por frase, libro, autor o etiqueta...">
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
