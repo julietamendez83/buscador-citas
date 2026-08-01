@@ -1,6 +1,6 @@
 let quotes = [];
 
-fetch('quotes.json')
+fetch('./quotes.json')
   .then(response => response.json())
   .then(data => {
     quotes = data;
